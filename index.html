@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gradient generator</title>
+    <link rel = "stylesheet" href = "main.css"/>
+  </head>
+  <body>
+    <header>
+      Make your own linear gradient
+    </header>
+    <section class  = "direction-wrapper">
+    Choose the direction <select id = "direction">
+      <option>To top</option>
+      <option>To bottom</option>
+      <option>To left</option>
+      <option>To right</option>
+      <option>To top left</option>
+      <option>To top right</option>
+      <option>To bottom left</option>
+      <option>To bottom right</option>
+    </select>
+    </section>
+    <section class = "colours">
+      Choose colors and write them after <br>the comma and without spaces: <input type = "text" id = "colours-names"/>
+    </section>
+    <div id = "gradientArea">
+    </div>
+    <div id = "submit" onclick = "drawAGradient();">
+      Draw a gradient
+    </div>
+  </body>
+  <script src = "index.js"></script>
+</html>
