@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradient generator</title>
-    <link rel = "stylesheet" href = "main.css"/>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
-      Make your own linear gradient
+      <span id = "header-text"></span>
     </header>
-    <section class  = "direction-wrapper">
-    Choose the direction <select id = "direction">
-      <option>To top</option>
-      <option>To bottom</option>
-      <option>To left</option>
-      <option>To right</option>
-      <option>To top left</option>
-      <option>To top right</option>
-      <option>To bottom left</option>
-      <option>To bottom right</option>
-    </select>
+	<div id="app">
+    <section class="direction-wrapper">
+      Choose the direction
+      <select id="direction">
+        <option>To top</option>
+        <option>To bottom</option>
+        <option>To left</option>
+        <option>To right</option>
+        <option>To top left</option>
+        <option>To top right</option>
+        <option>To bottom left</option>
+        <option>To bottom right</option>
+      </select>
     </section>
-    <section class = "colours">
-      Choose colors and write them after <br>the comma and without spaces: <input type = "text" id = "colours-names"/>
+    <section class="colours">
+      Choose at least 2 colours and write them after <br />the comma and without spaces:
+      <input type="text" id="colours-names" placeholder = "Your colours..."/>
     </section>
-    <div id = "gradientArea">
-    </div>
-    <div id = "submit" onclick = "drawAGradient();">
-      Draw a gradient
+    <div id="gradientArea"></div>
+    <div id="submit" onclick="drawAGradient();">Draw a gradient</div>
     </div>
   </body>
-  <script src = "index.js"></script>
+  <script src = "typed.js"></script>
+  <script src="index.js"></script>
 </html>
